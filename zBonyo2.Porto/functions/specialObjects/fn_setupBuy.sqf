@@ -33,9 +33,10 @@ _object addAction ["Buy HMMWV TOW $7,000", {["DAR_M1167",7000] call BONYO_fnc_bu
 _object addAction ["Buy COYOTE HMG $8,000", {["UK3CB_BAF_Coyote_passenger_L111A1_D",8000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
 _object addAction ["Buy COYOTE GMG $10,000", {["UK3CB_BAF_Coyote_passenger_L134A1_D",10000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
 _object addAction ["Buy Static HMG $500", {["B_HMG_01_high_F", 500] call BONYO_fnc_buyFort}, nil, 6, false, true];
-_object addAction ["Buy Static HMG Autonomous $5000", {["B_HMG_01_A_F", 5000] call BONYO_fnc_buyFort}, nil, 6, false, true];
 _object addAction ["Buy Static GMG $1000", {["B_GMG_01_high_F", 1000] call BONYO_fnc_buyFort}, nil, 6, false, true];
-_object addAction ["Buy Static GMG Autonomous $5000", {["B_GMG_01_A_F", 5000] call BONYO_fnc_buyFort}, nil, 6, false, true];
+_object addAction ["Buy HMG Autonomous Bag $4000", {["B_HMG_01_A_weapon_F", 4000] call BONYO_fnc_buyFort}, nil, 6, false, true];
+_object addAction ["Buy GMG Autonomous Bag $4000", {["B_GMG_01_A_weapon_F", 4000] call BONYO_fnc_buyFort}, nil, 6, false, true];
+_object addAction ["Buy Folded Tripod Bag $1000", {["B_HMG_01_support_F", 1000] call BONYO_fnc_buyFort}, nil, 6, false, true];
 _object addAction ["Buy Static MK6 Mortar $2000", {["B_Mortar_01_F", 2000] call BONYO_fnc_buyFort}, nil, 6, false, true];
 
 _object addAction ["<t color='#FF0000'>--Fortifications------------------------------</t>", "", nil, 6, false, true];
@@ -56,10 +57,10 @@ _object addAction ["Buy Airport Lights (Stupidly Tall) $100", {["Land_LampAirpor
 
 _object addAction ["<t color='#FF0000'>--Bunkers---------------------------</t>", "", nil, 6, false, true];
 
-_object addAction ["Small Guard Post $10", {["Land_GuardShed", 10] call BONYO_fnc_buyFort}, nil, 6, false, true];
-_object addAction ["Small Bunker $100", {["Land_BagBunker_Small_F", 100] call BONYO_fnc_buyFort}, nil, 6, false, true];
-_object addAction ["Large Bunker $500", {["Land_BagBunker_Large_F", 500] call BONYO_fnc_buyFort}, nil, 6, false, true];
-_object addAction ["Tower Bunker $1000", {["Land_BagBunker_Tower_F", 1000] call BONYO_fnc_buyFort}, nil, 6, false, true];
+_object addAction ["Buy Small Guard Post $10", {["Land_GuardShed", 10] call BONYO_fnc_buyFort}, nil, 6, false, true];
+_object addAction ["Buy Small Bunker $100", {["Land_BagBunker_Small_F", 100] call BONYO_fnc_buyFort}, nil, 6, false, true];
+_object addAction ["Buy Large Bunker $500", {["Land_BagBunker_Large_F", 500] call BONYO_fnc_buyFort}, nil, 6, false, true];
+_object addAction ["Buy Tower Bunker $1000", {["Land_BagBunker_Tower_F", 1000] call BONYO_fnc_buyFort}, nil, 6, false, true];
 
 _object addAction ["<t color='#FF0000'>--Aircraft---------------------------</t>", "", nil, 6, false, true];
 
@@ -70,3 +71,12 @@ _object addAction ["Buy Humming Bird $50,000", {["B_Heli_Light_01_F",50000] call
 _object addAction ["Buy Ghost Hawk $75,000", {["B_Heli_Transport_01_camo_F",75000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
 _object addAction ["Buy Pawnee $100,000", {["B_Heli_Light_01_armed_F",100000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
 _object addAction ["Buy A Fucking Commanche $500,000", {["B_Heli_Attack_01_F",500000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
+
+_object addAction ["<t color='#FF0000'>--Ammo/Weapons/Boxes------------------------------</t>", "", nil, 6, false, true];
+_object addAction ["Buy Basic Weapons (NATO) $10000", {["Box_NATO_Wps_F", 10000] call BONYO_fnc_buyFort}, nil, 6, false, true];
+_object addAction ["Buy Basic Weapons (US Army) $10000", {["CUP_USBasicWeapons_EP1", 10000] call BONYO_fnc_buyFort}, nil, 6, false, true];
+_object addAction ["Buy Basic Weapons (USMC) $10000", {["CUP_USBasicWeaponsBox", 10000] call BONYO_fnc_buyFort}, nil, 6, false, true];
+_object addAction ["Buy Basic Launchers (NATO) $15000", {["Box_NATO_WpsLaunch_F", 15000] call BONYO_fnc_buyFort}, nil, 6, false, true];
+_object addAction ["Buy Special Weapons (NATO) $20000", {["Box_NATO_WpsSpecial_F", 20000] call BONYO_fnc_buyFort}, nil, 6, false, true];
+_object addAction ["Buy Special Weapons (US Army) $20000", {["CUP_USSpecialWeapons_EP1", 20000] call BONYO_fnc_buyFort}, nil, 6, false, true];
+_object addAction ["Buy Special Weapons (USMC) $20000", {["CUP_USSpecialWeaponsBox", 20000] call BONYO_fnc_buyFort}, nil, 6, false, true];

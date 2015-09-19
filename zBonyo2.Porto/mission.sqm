@@ -14,7 +14,8 @@ class Mission
 		"A3_Weapons_F_Ammoboxes",
 		"A3_Structures_F_Civ_InfoBoards",
 		"aia_desert2_config",
-		"ace_mk6mortar"
+		"ace_mk6mortar",
+		"task_force_radio_items"
 	};
 	addOnsAuto[]=
 	{
@@ -29,6 +30,7 @@ class Mission
 		"A3_Structures_F_EPC_Civ_Accessories",
 		"A3_Weapons_F_Ammoboxes",
 		"A3_Structures_F_Civ_InfoBoards",
+		"task_force_radio_items",
 		"aia_desert2_config"
 	};
 	randomSeed=15042549;
@@ -547,7 +549,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=5;
+		items=6;
 		class Item0
 		{
 			position[]={2584.9565,5.0293379,2402.2117};
@@ -561,12 +563,13 @@ class Mission
 		class Item1
 		{
 			position[]={2584.4465,5.0293379,2391.1885};
-			azimut=172.62538;
+			azimut=172.625;
 			id=29;
 			side="EMPTY";
 			vehicle="Land_Atm_01_F";
 			skill=0.60000002;
 			text="BONYO_obj_atm";
+			init="this allowDamage false;";
 		};
 		class Item2
 		{
@@ -578,6 +581,7 @@ class Mission
 			vehicle="Box_NATO_AmmoVeh_F";
 			skill=0.60000002;
 			text="BONYO_obj_locker";
+			init="this allowDamage false;";
 		};
 		class Item3
 		{
@@ -593,13 +597,24 @@ class Mission
 		class Item4
 		{
 			position[]={2581.4553,5.0293379,2390.5652};
-			azimut=125.28436;
+			azimut=125.284;
 			offsetY=-8.0108599e-005;
 			id=32;
 			side="EMPTY";
 			vehicle="Land_Noticeboard_F";
 			skill=0.60000002;
 			text="BONYO_obj_buy";
+			init="this allowDamage false;";
+		};
+		class Item5
+		{
+			position[]={2591.1985,5.0293379,2392.4331};
+			azimut=-9.1951704;
+			id=33;
+			side="EMPTY";
+			vehicle="TF_NATO_Radio_Crate";
+			skill=0.60000002;
+			init="this allowDamage false;";
 		};
 	};
 	class Markers
@@ -716,6 +731,8 @@ class Mission
 		class Item0
 		{
 			position[]={2572.0913,5.0293379,2396.4399};
+			a=25;
+			b=25;
 			activationBy="EAST SEIZED";
 			interruptable=1;
 			age="UNKNOWN";
