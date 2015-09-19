@@ -1,0 +1,16 @@
+_rifleman = "I_MU_mercs_R1_F";
+_mg = "I_MU_mercs_R2_F";
+_marksman = "I_MU_mercs_M_F";
+_teamLeader = "I_MU_mercs_TL1_F";
+_squadLeader = "I_MU_mercs_TL2_F";
+_officer = "I_MU_mercs_chef_F";
+_riflemanAT = "I_MU_mercs_AT_F";
+_medic = "I_MU_mercs_medic_F";
+_sniper = "I_MU_mercs_sniper_F";
+_spotter = "I_MU_mercs_R3_F";
+_engineer = "I_MU_mercs_engineer_F";
+_exSpecialist = "I_MU_mercs_GL2_F";
+_grenadier = "I_MU_mercs_GL1_F";
+_crewman = "I_MU_mercs_helipilot_F";
+_pilot = "I_MU_mercs_sniper_F";
+_aircrew = "I_MU_mercs_TL2_F";

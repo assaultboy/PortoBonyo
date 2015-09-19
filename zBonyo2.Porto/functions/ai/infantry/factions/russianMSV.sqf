@@ -1,0 +1,16 @@
+_rifleman = "CUP_O_RU_Soldier";
+_mg = "CUP_O_RU_Soldier_MG";
+_marksman = "CUP_O_RU_Soldier_Marksman";
+_teamLeader = "CUP_O_RU_Soldier_TL";
+_squadLeader = "CUP_O_RU_Soldier_SL";
+_officer = "CUP_O_RU_Officer";
+_riflemanAT = "CUP_O_RU_Soldier_HAT";
+_medic = "CUP_O_RU_Medic";
+_sniper = "CUP_O_RU_Sniper";
+_spotter = "CUP_O_RU_Spotter";
+_engineer = "CUP_O_RU_Commander";
+_exSpecialist = "CUP_O_RU_Soldier_Saiga";
+_grenadier = "CUP_O_RU_Soldier_GL";
+_crewman = "CUP_O_RU_Crew";
+_pilot = "CUP_O_RU_Soldier_LAT";
+_aircrew = "CUP_O_RU_Soldier_AT";
