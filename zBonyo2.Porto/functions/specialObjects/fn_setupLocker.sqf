@@ -24,6 +24,9 @@ if (isNil "_this") then {
 	["The given argument is nil"] call BIS_fnc_error;
 };
 
+_box enableSimulation false;
+_box allowDamage false;
+
 _box addEventHandler ["ContainerOpened", {
 	private ["_box","_player","_personalBox"];
 	

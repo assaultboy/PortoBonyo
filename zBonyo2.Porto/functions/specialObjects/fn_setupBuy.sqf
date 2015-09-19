@@ -23,6 +23,9 @@ if (isNil "_object") then {
 	["The given argument is nil"] call BIS_fnc_error;
 };
 
+_object enableSimulation false;
+_object allowDamage false;
+
 _object addAction ["<t color='#FF0000'>--Ground------------------------------</t>", "", nil, 6, false, true];
 
 _object addAction ["Buy Quadbike $1000", {["B_Quadbike_01_F",1000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];

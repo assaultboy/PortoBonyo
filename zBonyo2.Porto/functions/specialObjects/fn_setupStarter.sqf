@@ -23,6 +23,9 @@ if (isNil "_object") then {
 	["The given argument is nil"] call BIS_fnc_error;
 };
 
+_object enableSimulation false;
+_object allowDamage false;
+
 _object addAction ["Start Wave", {
 	[0, {
 		(BONYO_var_wave + 1) call BONYO_fnc_spawnWave;

@@ -23,6 +23,9 @@ if (isNil "_object") then {
 	["Given argument is nil"] call BIS_fnc_error;
 };
 
+_object enableSimulation false;
+_object allowDamage false;
+
 (_object) spawn {
 	private ["_pos"];
 	

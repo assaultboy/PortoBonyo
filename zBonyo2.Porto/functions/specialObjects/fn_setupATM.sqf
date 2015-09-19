@@ -23,6 +23,9 @@ if (isNil "_atm") then {
 	["Given parameter is nil"] call BIS_fnc_error;
 };
 
+_atm enableSimulation false;
+_atm allowDamage false;
+
 _atm addAction ["Check Balance", {(_this select 1) call BONYO_fnc_checkBalance}, nil, 6];
 
 _atm addAction ["<t color='#FF0000'>------------------------------</t>", {}, nil, 6];

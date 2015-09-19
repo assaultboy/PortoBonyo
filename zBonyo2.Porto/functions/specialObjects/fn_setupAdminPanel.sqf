@@ -15,4 +15,5 @@
 		call BONYO_fnc_setupAdminPanel
 */
 
+//I don't know what this was for but I'm too scared to delete it -John
 BONYO_obj_starter addAction ["Test", {}];
