@@ -16,7 +16,6 @@
 	EXAMPLE
 		 _pos call BONYO_fnc_spawnAirGroup
 */
-"In fnc" call BONYO_fnc_print;
 
 if (!isServer) then {
 	["This function must be executed on the server"] call BIS_fnc_error;
@@ -66,7 +65,6 @@ switch ([1,2,3,4,5,6,7] call BIS_fnc_selectRandom) do {
 //Add the vehicle to the group
 _grp addVehicle _air;
 
-"Starting to create units" call BONYO_fnc_print;
 //Spawn each member of the group and set them up for bonyo
 {
 	private ["_unit"];
@@ -75,6 +73,7 @@ _grp addVehicle _air;
 	[_unit] join _grp;
 	
 	_unit setRank (_x select 1);
+	
 	
 	//Give the unit's killer money
 	_unit addEventHandler ["killed", {

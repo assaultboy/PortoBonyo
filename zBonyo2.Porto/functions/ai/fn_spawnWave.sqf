@@ -80,7 +80,6 @@ if (random _wave >= 1) then {
 	for [{_i=1}, {_i <=_div}, {_i=_i+1}] do {
 		private ["_vGrp"];
 		
-		"Going into fnc" call BONYO_fnc_print;
 		_vGrp = ((getMarkerPos (BONYO_var_enemySpawn_vic call BIS_fnc_selectRandom)) call BONYO_fnc_spawnVicGroup);
 		
 		_vGrp addWaypoint [getMarkerPos "respawn_west", 50];
@@ -100,7 +99,6 @@ if (random _wave >= 1) then {
 	for [{_i=1}, {_i <=_div}, {_i=_i+1}] do {
 		private ["_bGrp"];
 		
-		"Going into fnc" call BONYO_fnc_print;
 		_bGrp = ((getMarkerPos (BONYO_var_enemySpawn_boa call BIS_fnc_selectRandom)) call BONYO_fnc_spawnBoaGroup);
 		
 		_bGrp addWaypoint [getMarkerPos "respawn_west", 0];
@@ -120,7 +118,6 @@ if (random _wave >= 1) then {
 	for [{_i=1}, {_i <=_div}, {_i=_i+1}] do {
 		private ["_aGrp"];
 		
-		"Going into fnc" call BONYO_fnc_print;
 		_aGrp = ((getMarkerPos (BONYO_var_enemySpawn_air call BIS_fnc_selectRandom)) call BONYO_fnc_spawnAirGroup);
 		
 		_aGrp addWaypoint [getMarkerPos "respawn_west", 50];
