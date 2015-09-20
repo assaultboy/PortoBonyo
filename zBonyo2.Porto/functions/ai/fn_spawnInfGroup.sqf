@@ -29,7 +29,7 @@ _spawnPoint = _this;
 _grp = createGroup EAST;
 
 //Choose a random faction to load
-switch ([1,2,3,4,5,6,7] call BIS_fnc_selectRandom) do {
+switch ([1,2,3,4,5,6,7,8] call BIS_fnc_selectRandom) do {
 	case 1: {
 		#include "infantry\factions\csat.sqf"
 	};
@@ -56,6 +56,10 @@ switch ([1,2,3,4,5,6,7] call BIS_fnc_selectRandom) do {
 	
 	case 7: {
 		#include "infantry\factions\russianMSV.sqf"
+	};
+		
+	case 8: {
+		#include "infantry\factions\ionpmc.sqf"
 	};
 };
 
