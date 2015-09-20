@@ -18,7 +18,9 @@ class Mission
 		"ace_finger",
 		"A3_Structures_F_Heli_Ind_Machines",
 		"aia_takistan_config",
-		"A3_Supplies_F_Heli_CargoNets"
+		"A3_Supplies_F_Heli_CargoNets",
+		"ace_weather",
+		"ace_advanced_ballistics"
 	};
 	addOnsAuto[]=
 	{
@@ -30,6 +32,8 @@ class Mission
 		"ace_medical",
 		"ace_mk6mortar",
 		"ace_finger",
+		"ace_weather",
+		"ace_advanced_ballistics",
 		"A3_Structures_F_Bootcamp_VR_Helpers",
 		"A3_Structures_F_EPC_Civ_Accessories",
 		"A3_Weapons_F_Ammoboxes",
@@ -59,7 +63,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=6;
+		items=8;
 		class Item0
 		{
 			side="WEST";
@@ -597,6 +601,146 @@ class Mission
 				};
 			};
 		};
+		class Item6
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5113.9326,166.64288,6172.2114};
+					class args
+					{
+						items=6;
+						class Item0
+						{
+							value="1";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="enableServerController";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="useACEWeather";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="syncRain";
+						};
+						class Item3
+						{
+							value="1";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="syncWind";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="syncMisc";
+						};
+						class Item5
+						{
+							value="60";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="serverUpdateInterval";
+						};
+					};
+					id=29;
+					side="LOGIC";
+					vehicle="ace_weather_ModuleSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item7
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5115.0435,166.07753,6172.2085};
+					class args
+					{
+						items=10;
+						class Item0
+						{
+							value="0";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="enabled";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="simulateForSnipers";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="simulateForGroupMembers";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="simulateForEveryone";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="disabledInFullAutoMode";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="ammoTemperatureEnabled";
+						};
+						class Item6
+						{
+							value="1";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="barrelLengthInfluenceEnabled";
+						};
+						class Item7
+						{
+							value="1";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="bulletTraceEnabled";
+						};
+						class Item8
+						{
+							value="0";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="simulationInterval";
+						};
+						class Item9
+						{
+							value="3000";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="simulationRadius";
+						};
+					};
+					id=30;
+					side="LOGIC";
+					vehicle="ace_advanced_ballistics_ModuleSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
@@ -605,7 +749,7 @@ class Mission
 		{
 			position[]={5209.0049,145.39891,6061.8257};
 			offsetY=0.24176399;
-			id=29;
+			id=31;
 			side="EMPTY";
 			vehicle="VR_Area_01_circle_4_yellow_F";
 			skill=0.60000002;
@@ -613,9 +757,9 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={5217.3003,145.29594,6052.0244};
+			position[]={5217.4185,145.29094,6051.8472};
 			azimut=165.58151;
-			id=30;
+			id=32;
 			side="EMPTY";
 			vehicle="Land_Atm_01_F";
 			skill=0.60000002;
@@ -626,7 +770,7 @@ class Mission
 			position[]={5221.4009,145.49757,6054.041};
 			azimut=163.59047;
 			offsetY=0.0310068;
-			id=31;
+			id=33;
 			side="EMPTY";
 			vehicle="Box_NATO_AmmoVeh_F";
 			skill=0.60000002;
@@ -637,7 +781,7 @@ class Mission
 			position[]={5203.1802,145.39088,6049.5259};
 			azimut=538.10242;
 			offsetY=0.000101089;
-			id=32;
+			id=34;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
@@ -648,7 +792,7 @@ class Mission
 			position[]={5187.582,145.39999,6057.3481};
 			azimut=165.94452;
 			offsetY=-8.0108599e-005;
-			id=33;
+			id=35;
 			side="EMPTY";
 			vehicle="Land_Noticeboard_F";
 			skill=0.60000002;
@@ -659,7 +803,7 @@ class Mission
 			position[]={5178.1855,145.39999,6092.9434};
 			azimut=431.42374;
 			offsetY=0.000101089;
-			id=34;
+			id=36;
 			side="EMPTY";
 			vehicle="Land_PressureWasher_01_F";
 			skill=0.60000002;
@@ -667,8 +811,9 @@ class Mission
 		};
 		class Item6
 		{
-			position[]={5192.9878,145.39999,6074.8359};
-			id=35;
+			position[]={5213.8843,145.31184,6051.355};
+			azimut=-106.20497;
+			id=37;
 			side="EMPTY";
 			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
