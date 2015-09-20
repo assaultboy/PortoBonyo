@@ -645,7 +645,7 @@ class Mission
 						};
 						class Item5
 						{
-							value="60";
+							value="600";
 							parentCls="ace_weather_ModuleSettings";
 							typeName="serverUpdateInterval";
 						};
