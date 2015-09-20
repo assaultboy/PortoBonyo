@@ -15,7 +15,7 @@ class Mission
 		"A3_Structures_F_Civ_InfoBoards",
 		"aia_desert2_config",
 		"ace_mk6mortar",
-		"task_force_radio_items"
+		"ace_finger"
 	};
 	addOnsAuto[]=
 	{
@@ -26,11 +26,11 @@ class Mission
 		"ace_hearing",
 		"ace_medical",
 		"ace_mk6mortar",
+		"ace_finger",
 		"A3_Structures_F_Bootcamp_VR_Helpers",
 		"A3_Structures_F_EPC_Civ_Accessories",
 		"A3_Weapons_F_Ammoboxes",
 		"A3_Structures_F_Civ_InfoBoards",
-		"task_force_radio_items",
 		"aia_desert2_config"
 	};
 	randomSeed=15042549;
@@ -54,7 +54,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=5;
+		items=6;
 		class Item0
 		{
 			side="WEST";
@@ -340,7 +340,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={2525.9482,5.0293379,2419.5869};
+					position[]={2301.3723,-0.28360933,2937.6936};
 					class args
 					{
 						items=4;
@@ -386,15 +386,27 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={2523.1123,5.0293379,2419.5664};
+					position[]={2298.5364,0.12243434,2937.6731};
 					class args
 					{
-						items=1;
+						items=3;
 						class Item0
 						{
 							value="0";
 							parentCls="ACE_ModuleHearing";
 							typeName="EnableCombatDeafness";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ACE_ModuleHearing";
+							typeName="DisableEarRinging";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ACE_ModuleHearing";
+							typeName="enabledForZeusUnits";
 						};
 					};
 					id=25;
@@ -414,7 +426,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={2524.1807,5.0293379,2419.582};
+					position[]={2299.6047,-0.07781598,2937.6887};
 					class args
 					{
 						items=13;
@@ -514,7 +526,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={2522.0771,5.0293379,2419.5547};
+					position[]={2297.5012,0.20309885,2937.6614};
 					class args
 					{
 						items=3;
@@ -546,15 +558,49 @@ class Mission
 				};
 			};
 		};
+		class Item5
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2302.8904,-0.091391169,2937.7808};
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="1";
+							parentCls="ace_finger_moduleSettings";
+							typeName="enabled";
+						};
+						class Item1
+						{
+							value="5";
+							parentCls="ace_finger_moduleSettings";
+							typeName="maxRange";
+						};
+					};
+					id=28;
+					side="LOGIC";
+					vehicle="ace_finger_moduleSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=6;
+		items=5;
 		class Item0
 		{
 			position[]={2584.9565,5.0293379,2402.2117};
 			offsetY=0.24176399;
-			id=28;
+			id=29;
 			side="EMPTY";
 			vehicle="VR_Area_01_circle_4_yellow_F";
 			skill=0.60000002;
@@ -562,21 +608,20 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={2584.4465,5.0293379,2391.1885};
+			position[]={2585.4966,5.0293379,2390.8528};
 			azimut=172.625;
-			id=29;
+			id=30;
 			side="EMPTY";
 			vehicle="Land_Atm_01_F";
 			skill=0.60000002;
 			text="BONYO_obj_atm";
-			init="this allowDamage false;";
 		};
 		class Item2
 		{
 			position[]={2589.3916,5.0293379,2392.1245};
 			azimut=173.21899;
 			offsetY=0.0310068;
-			id=30;
+			id=31;
 			side="EMPTY";
 			vehicle="Box_NATO_AmmoVeh_F";
 			skill=0.60000002;
@@ -586,9 +631,9 @@ class Mission
 		class Item3
 		{
 			position[]={2589.2429,5.0293379,2412.6763};
-			azimut=428.42035;
+			azimut=428.42001;
 			offsetY=0.000101089;
-			id=31;
+			id=32;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
@@ -596,25 +641,14 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={2581.4553,5.0293379,2390.5652};
-			azimut=125.284;
+			position[]={2583.3784,5.0293379,2390.6047};
+			azimut=172.98801;
 			offsetY=-8.0108599e-005;
-			id=32;
+			id=33;
 			side="EMPTY";
 			vehicle="Land_Noticeboard_F";
 			skill=0.60000002;
 			text="BONYO_obj_buy";
-			init="this allowDamage false;";
-		};
-		class Item5
-		{
-			position[]={2591.1985,5.0293379,2392.4331};
-			azimut=-9.1951704;
-			id=33;
-			side="EMPTY";
-			vehicle="TF_NATO_Radio_Crate";
-			skill=0.60000002;
-			init="this allowDamage false;";
 		};
 	};
 	class Markers
