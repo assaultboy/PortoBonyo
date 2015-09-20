@@ -32,7 +32,7 @@ if (isNil "_allowWater") then {
 
 _pos = [(random ((_bl select 0) - (_tr select 0))) + (_tr select 0), (random ((_bl select 1) - (_tr select 1))) + (_tr select 1),0];
 
-if (surfaceIsWater _pos && !_allowWater) then {
+if ((surfaceIsWater _pos && !_allowWater) || _pos distance (getMarkerPos "respawn_west") < 1000) then {
 	_pos = [_bl,_tr,_allowWater] call BONYO_fnc_randomPosition;
 };
 

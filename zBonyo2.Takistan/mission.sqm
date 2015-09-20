@@ -882,13 +882,13 @@ class Mission
 		};
 		class Item9
 		{
-			position[]={6818.8193,357.16797,119.62769};
+			position[]={18.886368,606.44745,12.961914};
 			name="coord_bl";
 			type="Empty";
 		};
 		class Item10
 		{
-			position[]={12783.613,147.85391,12837.565};
+			position[]={12784.735,148.38548,12790.97};
 			name="coord_tr";
 			type="Empty";
 		};
