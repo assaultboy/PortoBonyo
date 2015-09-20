@@ -40,6 +40,7 @@ removeUniform _unit;
 removeAllWeapons _unit:
 removeAllAssignedItems _unit;
 
+
 //Give the unit the Bonyo uniform and items
 _unit addUniform "U_B_CombatUniform_NKPBlack";
 
@@ -52,11 +53,11 @@ _unit assignItem "itemMap";
 _unit addItem "itemCompass";
 _unit assignItem "itemCompass";
 
-_unit addItem "tf_anprc152_2";
-_unit assignItem "tf_anprc152_2";
-
 _unit addItem "itemWatch";
 _unit assignItem "itemWatch";
+
+_unit addItem "tf_anprc152";
+_unit assignItem "tf_anprc152";
 
 //Give the unit the Standard Bonyo Weapon and ammo
 _unit addMagazines ["30Rnd_9x21_Mag",4];
