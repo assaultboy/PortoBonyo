@@ -57,17 +57,3 @@ _object addAction ["Purchase Mortarman Tools: $10",{
 		hint "You do not have enough for that";
 	};
 }];
-
-_object addAction ["Purchase Map Tools: $10",{
-	private ["_box"];
-	
-	_box = (_this select 0);
-	
-	if([player, 10] call BONYO_fnc_purchase) then {
-		_box addItemCargoGlobal ["ACE_RangeTable_82mm",1];
-		
-		hint "82mm Rangetable purchased";
-	} else {
-		hint "You do not have enough for that";
-	};
-}];
