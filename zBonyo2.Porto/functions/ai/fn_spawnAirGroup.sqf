@@ -21,7 +21,7 @@ if (!isServer) then {
 	["This function must be executed on the server"] call BIS_fnc_error;
 };
 
-private ["_pilot"];
+private ["_rifleman","_mg","_marksman","_teamLeader","_squadLeader","_officer","_riflemanAT","_medic","_sniper","_spotter","_engineer","_exSpecialist","_grenadier","_crewman","_pilot","_aircrew"];
 private ["_groupProto","_grp","_spawnPoint","_air"];
 
 _groupProto = [];
