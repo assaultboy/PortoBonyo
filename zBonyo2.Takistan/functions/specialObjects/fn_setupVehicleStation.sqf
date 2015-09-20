@@ -83,6 +83,22 @@ _object addAction ["Repair Vehicle", {
 	}
 }];
 
-_object addAction ["Rearm Vehicle", {}];
-
-_object addAction ["Sell Vehicle", {}];
+_object addAction ["Sell Vehicle", {
+	private ["_vic"];
+	
+	_vic = (nearestObjects [_this select 0, ["LandVehicle","Air","Ship"], 20]) select 0;
+	
+	if (isNil "_vic") then {
+		hint "No Vehicle in Range";
+	} else {
+		private ["_cost"];
+		
+		_cost = ceil (1000 + random 1000);
+		
+		deleteVehicle _vic;
+		
+		[player, _cost, false] call BONYO_fnc_giveMoney;
+		
+		hint ((_vic call BONYO_fnc_getVehicleDisplayName) + " has been sold for $" + str _cost);
+	}
+}];
