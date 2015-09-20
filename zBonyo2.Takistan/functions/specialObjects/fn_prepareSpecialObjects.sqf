@@ -26,3 +26,5 @@ BONYO_obj_starter call BONYO_fnc_setupStarter;
 BONYO_obj_buy call BONYO_fnc_setupBuy;
 
 BONYO_obj_vehicleStation call BONYO_fnc_setupVehicleStation;
+
+BONYO_obj_itemShop call BONYO_fnc_setupItemShop;

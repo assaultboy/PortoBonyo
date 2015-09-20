@@ -68,8 +68,7 @@ _object addAction ["Buy Tower Bunker $1000", {["Land_BagBunker_Tower_F", 1000] c
 _object addAction ["<t color='#FF0000'>--Aircraft---------------------------</t>", "", nil, 6, false, true];
 
 _object addAction ["Buy UAV Darter Pack $1000", {["B_UAV_01_backpack_F", 1000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
-_object addAction ["Buy UAV Terminal $100", {["Item_B_UavTerminal", 100] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
-_object addAction ["Buy Civillian Helo $25,000", {["C_Heli_Light_01_civil_F",25000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
+_object addAction ["Buy Civilian Helo $25,000", {["C_Heli_Light_01_civil_F",25000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
 _object addAction ["Buy Humming Bird $50,000", {["B_Heli_Light_01_F",50000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
 _object addAction ["Buy Ghost Hawk $75,000", {["B_Heli_Transport_01_camo_F",75000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
 _object addAction ["Buy Pawnee $100,000", {["B_Heli_Light_01_armed_F",100000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];

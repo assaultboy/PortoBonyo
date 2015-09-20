@@ -39,6 +39,7 @@ class CfgFunctions
 			class setupStarter {};
 			class setupBuy {};
 			class setupVehicleStation {};
+			class setupItemShop {};
 		};
 		
 		class ai
