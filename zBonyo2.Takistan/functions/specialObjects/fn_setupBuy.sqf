@@ -30,8 +30,8 @@ _object addAction ["<t color='#FF0000'>--Ground------------------------------</t
 
 _object addAction ["Buy Quadbike $1000", {["B_Quadbike_01_F",1000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
 _object addAction ["Buy HEMTT $3,000", {["B_Truck_01_box_F",3000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
-_object addAction ["Buy JAKAL HMG $5,000", {["UK3CB_BAF_Jakal2_L2A1_D",5000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
-_object addAction ["Buy JAKAL GMG $6,000", {["UK3CB_BAF_Jakal2_GMG_D",6000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
+_object addAction ["Buy JAKAL HMG $5,000", {["UK3CB_BAF_Jackal2_L2A1_D",5000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
+_object addAction ["Buy JAKAL GMG $6,000", {["UK3CB_BAF_Jackal2_GMG_D",6000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
 _object addAction ["Buy HMMWV TOW $7,000", {["DAR_M1167",7000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
 _object addAction ["Buy COYOTE HMG $8,000", {["UK3CB_BAF_Coyote_passenger_L111A1_D",8000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
 _object addAction ["Buy COYOTE GMG $10,000", {["UK3CB_BAF_Coyote_passenger_L134A1_D",10000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
