@@ -669,7 +669,7 @@ class Mission
 		items=14;
 		class Item0
 		{
-			position[]={5216.3394,145.42369,6071.2388};
+			position[]={5172.0566,145.35646,6072.0151};
 			name="respawn_west";
 			text="Bonyo";
 			type="b_unknown";
@@ -678,25 +678,25 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={6482.9189,313.51617,6346.1611};
+			position[]={5911.751,182.56467,6328.1655};
 			name="enemyspawn_ei_1";
 			type="Empty";
 		};
 		class Item2
 		{
-			position[]={3934.4055,526.24835,6937.4966};
+			position[]={4065.542,326.83099,6274.6606};
 			name="enemyspawn_ei_2";
 			type="Empty";
 		};
 		class Item3
 		{
-			position[]={5861.9727,267.48633,5682.8643};
+			position[]={5657.3936,314.60007,5639.9033};
 			name="enemyspawn_ei_3";
 			type="Empty";
 		};
 		class Item4
 		{
-			position[]={5176.4595,217.30606,5185.5088};
+			position[]={4955.3716,188.53975,5470.2583};
 			name="enemyspawn_ei_4";
 			type="Empty";
 		};

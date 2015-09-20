@@ -9,8 +9,8 @@
 author = "Romano / Aberhart";
 
 // Mission name
-briefingName = "zBonyo2: Porto"; // in mission select menu
-onLoadName = "zBonyo2: Porto"; // on load screen
+briefingName = "zBonyo2.1: Takistan"; // in mission select menu
+onLoadName = "zBonyo2.1: Takistan"; // on load screen
 
 // Picture shown
 loadScreen = "Images\orbat.paa"; // on load screen

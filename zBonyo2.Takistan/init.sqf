@@ -38,7 +38,7 @@ if (isServer) then {
 			_clear = true;
 			
 			{
-				if (_x distance getMarkerPos "awayMission" < 400) then {
+				if (_x distance getMarkerPos "awayMission" < 1500) then {
 					_clear = false;
 				};
 			} forEach (call CBA_fnc_players);
