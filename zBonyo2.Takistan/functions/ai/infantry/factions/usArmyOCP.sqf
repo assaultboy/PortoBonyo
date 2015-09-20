@@ -1,0 +1,16 @@
+_rifleman = "CUP_B_US_Soldier";
+_mg = "CUP_B_US_Soldier_MG";
+_marksman = "CUP_B_US_Soldier_Marksman";
+_teamLeader = "CUP_B_US_Soldier_TL";
+_squadLeader = "CUP_B_US_Soldier_SL";
+_officer = "CUP_B_US_Officer";
+_riflemanAT = "CUP_B_US_Soldier_AT";
+_medic = "CUP_B_US_Medic";
+_sniper = "CUP_B_US_Sniper_M107";
+_spotter = "CUP_B_US_Spotter";
+_engineer = "CUP_B_US_Engineer";
+_exSpecialist = "CUP_B_FR_Soldier_Exp";
+_grenadier = "CUP_B_US_Soldier_GL";
+_crewman = "CUP_B_US_Crew";
+_pilot = "CUP_B_US_Pilot";
+_aircrew = "CUP_B_US_Soldier";

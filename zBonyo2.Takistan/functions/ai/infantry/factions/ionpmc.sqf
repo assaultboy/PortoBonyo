@@ -1,0 +1,16 @@
+_rifleman = "CUP_I_PMC_Soldier";
+_mg = "CUP_I_PMC_Soldier_M4A3";
+_marksman = "CUP_I_PMC_Sniper";
+_teamLeader = "CUP_I_PMC_Soldier_TL";
+_squadLeader = "CUP_I_PMC_Soldier_AA";
+_officer = "CUP_I_PMC_Bodyguard_AA12";
+_riflemanAT = "CUP_I_PMC_Soldier_AT";
+_medic = "CUP_I_PMC_Medic";
+_sniper = "CUP_I_PMC_Sniper";
+_spotter = "CUP_I_PMC_Sniper_KSVK";
+_engineer = "CUP_I_PMC_MG";
+_exSpecialist = "CUP_I_PMC_Soldier";
+_grenadier = "CUP_I_PMC_Soldier_GL";
+_crewman = "CUP_I_PMC_Crew";
+_pilot = "CUP_I_PMC_Pilot";
+_aircrew = "CUP_I_PMC_Soldier_M4A3";

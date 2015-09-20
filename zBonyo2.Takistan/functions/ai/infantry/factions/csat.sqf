@@ -1,0 +1,16 @@
+_rifleman = "y_rifle";
+_mg = "y_mg";
+_marksman = "y_rifle_c";
+_teamLeader = "y_leader";
+_squadLeader = "y_cell_leader";
+_officer = "y_heavy";
+_riflemanAT = "y_lat";
+_medic = "y_medic";
+_sniper = "y_mm";
+_spotter = "y_rifle_c";
+_engineer = "y_eng";
+_exSpecialist = "y_exp";
+_grenadier = "y_gl";
+_crewman = "y_driver";
+_pilot = "y_pilot";
+_aircrew = "y_heavy_c";
