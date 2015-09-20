@@ -13,7 +13,8 @@
 			True if the point may exist over water
 			
 	RETURNS
-		nothing
+		3D Vector
+			Position that was chosen
 		
 	EXAMPLE
 		 [[0,0,0], [100,100,0], false] call BONYO_fnc_randomPosition

@@ -16,6 +16,7 @@ class CfgFunctions
 			class load {};
 			class collision {};
 			class randomPosition {}; 
+			class getVehicleDisplayName {}; //This is some black magic voodoo, avert your eyes
 		};
 		
 		class money
@@ -37,6 +38,7 @@ class CfgFunctions
 			class setupSellArea {};
 			class setupStarter {};
 			class setupBuy {};
+			class setupVehicleStation {};
 		};
 		
 		class ai

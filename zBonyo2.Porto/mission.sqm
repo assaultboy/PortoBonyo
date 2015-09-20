@@ -15,7 +15,8 @@ class Mission
 		"A3_Structures_F_Civ_InfoBoards",
 		"aia_desert2_config",
 		"ace_mk6mortar",
-		"ace_finger"
+		"ace_finger",
+		"A3_Structures_F_Heli_Ind_Machines"
 	};
 	addOnsAuto[]=
 	{
@@ -31,6 +32,7 @@ class Mission
 		"A3_Structures_F_EPC_Civ_Accessories",
 		"A3_Weapons_F_Ammoboxes",
 		"A3_Structures_F_Civ_InfoBoards",
+		"A3_Structures_F_Heli_Ind_Machines",
 		"aia_desert2_config"
 	};
 	randomSeed=15042549;
@@ -595,7 +597,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=5;
+		items=6;
 		class Item0
 		{
 			position[]={2584.9565,5.0293379,2402.2117};
@@ -626,7 +628,6 @@ class Mission
 			vehicle="Box_NATO_AmmoVeh_F";
 			skill=0.60000002;
 			text="BONYO_obj_locker";
-			init="this allowDamage false;";
 		};
 		class Item3
 		{
@@ -649,6 +650,17 @@ class Mission
 			vehicle="Land_Noticeboard_F";
 			skill=0.60000002;
 			text="BONYO_obj_buy";
+		};
+		class Item5
+		{
+			position[]={2566.4302,5.0293379,2414.8093};
+			azimut=358.60901;
+			offsetY=0.000101089;
+			id=34;
+			side="EMPTY";
+			vehicle="Land_PressureWasher_01_F";
+			skill=0.60000002;
+			text="BONYO_obj_vehicleStation";
 		};
 	};
 	class Markers
