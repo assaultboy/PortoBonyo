@@ -757,25 +757,6 @@ class Mission
 			colorName="ColorBlue";
 		};
 	};
-	class Sensors
-	{
-		items=1;
-		class Item0
-		{
-			position[]={5155.7329,145.1707,6070.2583};
-			a=36;
-			b=56;
-			angle=75.060699;
-			rectangular=1;
-			activationBy="EAST SEIZED";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="[""Mission Failed"",false,2] call BIS_fnc_endMission;";
-			class Effects
-			{
-			};
-		};
-	};
 };
 class Intro
 {
