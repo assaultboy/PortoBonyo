@@ -17,7 +17,8 @@ class Mission
 		"ace_mk6mortar",
 		"ace_finger",
 		"A3_Structures_F_Heli_Ind_Machines",
-		"aia_takistan_config"
+		"aia_takistan_config",
+		"A3_Supplies_F_Heli_CargoNets"
 	};
 	addOnsAuto[]=
 	{
@@ -34,6 +35,7 @@ class Mission
 		"A3_Weapons_F_Ammoboxes",
 		"A3_Structures_F_Civ_InfoBoards",
 		"A3_Structures_F_Heli_Ind_Machines",
+		"A3_Supplies_F_Heli_CargoNets",
 		"aia_takistan_config"
 	};
 	randomSeed=15042549;
@@ -598,7 +600,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=6;
+		items=7;
 		class Item0
 		{
 			position[]={5209.0049,145.39891,6061.8257};
@@ -662,6 +664,15 @@ class Mission
 			vehicle="Land_PressureWasher_01_F";
 			skill=0.60000002;
 			text="BONYO_obj_vehicleStation";
+		};
+		class Item6
+		{
+			position[]={5192.9878,145.39999,6074.8359};
+			id=35;
+			side="EMPTY";
+			vehicle="B_CargoNet_01_ammo_F";
+			skill=0.60000002;
+			text="BONYO_obj_itemShop";
 		};
 	};
 	class Markers
