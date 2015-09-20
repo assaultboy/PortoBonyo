@@ -86,25 +86,6 @@ if (random _wave >= 1) then {
 	};
 };
 
-//Spawn a Boats maybe (Take Forever to get to boats and doesn't count them as part of wave?)
-if (random _wave >= 1) then {
-	private ["_div"];
-	
-	_div = ((_wave - (_wave mod 5)) / 5);
-	
-	if (_div > count (call CBA_fnc_players)) then {
-		_div = count (call CBA_fnc_players);
-	};
-	
-	for [{_i=1}, {_i <=_div}, {_i=_i+1}] do {
-		private ["_bGrp"];
-		
-		_bGrp = ((getMarkerPos (BONYO_var_enemySpawn_boa call BIS_fnc_selectRandom)) call BONYO_fnc_spawnBoaGroup);
-		
-		_bGrp addWaypoint [getMarkerPos "respawn_west", 0];
-	};
-};
-
 //Spawn Aircraft maybe
 if (random _wave >= 1) then {
 	private ["_div"];

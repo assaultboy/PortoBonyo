@@ -45,7 +45,6 @@ class CfgFunctions
 		{
 			class spawnInfGroup {};
 			class spawnVicGroup {};
-			class spawnBoaGroup {};
 			class spawnAirGroup {};
 			class spawnWave {};
 			class setWave {};
