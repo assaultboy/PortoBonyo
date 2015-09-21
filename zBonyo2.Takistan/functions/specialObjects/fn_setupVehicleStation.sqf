@@ -50,7 +50,56 @@ _object addAction ["Get Prices", {
 		//Calculate Fuel
 		_str = _str + "Refuel: $" + (str ceil ((1 - fuel _vic) * 500)) + "\n";
 		
+		//Calculate Rearm
+		_str = _str + "Rearm: $250\n";
+		
 		hint _str;
+	}
+}];
+
+_object addAction ["Refuel Vehicle", {
+	private ["_vic","_cost"];
+	
+	_vic = (nearestObjects [_this select 0, ["LandVehicle","Air","Ship"], 20]) select 0;
+	
+	if (isNil "_vic") then {
+		hint "No Vehicle in Range";
+	} else {
+		if ([player, ceil ((1 - fuel _vic) * 500)] call BONYO_fnc_purchase) then {
+			[-2, {
+				if (local _this) then {
+					_this setFuel 1;
+					_this setFuelCargo 1;
+				};
+			}, _vic] call CBA_fnc_globalExecute;
+			
+			hint ((_vic call BONYO_fnc_getVehicleDisplayName) + " has been refueled for $" + str ceil ((1 - fuel _vic) * 500));
+		} else {
+			hint "You do not have enough money for this";
+		}
+	}
+}];
+
+_object addAction ["Rearm Vehicle", {
+	private ["_vic","_cost"];
+	
+	_vic = (nearestObjects [_this select 0, ["LandVehicle","Air","Ship"], 20]) select 0;
+	
+	if (isNil "_vic") then {
+		hint "No Vehicle in Range";
+	} else {
+		if ([player, 250] call BONYO_fnc_purchase) then {
+			[-2, {
+				if (local _this) then {
+					_this setVehicleAmmoDef 1;
+					_this setAmmoCargo 1;
+				};
+			}, _vic] call CBA_fnc_globalExecute;
+			
+			hint ((_vic call BONYO_fnc_getVehicleDisplayName) + " has been rearmed for $250");
+		} else {
+			hint "You do not have enough money for this";
+		}
 	}
 }];
 
