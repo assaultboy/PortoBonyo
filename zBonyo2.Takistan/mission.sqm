@@ -349,7 +349,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={5111.2559,167.89082,6172.1211};
+					position[]={5002.3164,190.49008,6207.9561};
 					class args
 					{
 						items=4;
@@ -395,7 +395,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={5108.4199,168.87373,6172.0996};
+					position[]={4999.4805,190.49274,6207.9346};
 					class args
 					{
 						items=3;
@@ -435,7 +435,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={5109.4883,168.63423,6172.1152};
+					position[]={5000.5488,190.4416,6207.9502};
 					class args
 					{
 						items=13;
@@ -535,7 +535,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={5107.3848,169.00903,6172.0879};
+					position[]={4998.4453,190.63351,6207.9229};
 					class args
 					{
 						items=3;
@@ -575,7 +575,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={5112.7734,167.2323,6172.207};
+					position[]={5003.834,190.57727,6208.042};
 					class args
 					{
 						items=2;
@@ -609,7 +609,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={5113.9326,166.64288,6172.2114};
+					position[]={5004.9932,190.58363,6208.0464};
 					class args
 					{
 						items=6;
@@ -667,7 +667,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={5115.0435,166.07753,6172.2085};
+					position[]={5006.104,190.55717,6208.0435};
 					class args
 					{
 						items=10;
@@ -822,7 +822,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=14;
+		items=19;
 		class Item0
 		{
 			position[]={5172.0566,145.35646,6072.0151};
@@ -834,7 +834,7 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={5911.751,182.56467,6328.1655};
+			position[]={5893.6577,183.07352,6325.8057};
 			name="enemyspawn_ei_1";
 			type="Empty";
 		};
@@ -852,7 +852,7 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={4955.3716,188.53975,5470.2583};
+			position[]={4759.3516,165.19745,5648.5391};
 			name="enemyspawn_ei_4";
 			type="Empty";
 		};
@@ -864,7 +864,7 @@ class Mission
 		};
 		class Item6
 		{
-			position[]={7346.8809,339.23087,4897.5664};
+			position[]={5891.9678,140.74913,6518.188};
 			name="enemyspawn_vic_2";
 			type="Empty";
 		};
@@ -888,7 +888,7 @@ class Mission
 		};
 		class Item10
 		{
-			position[]={12784.735,148.38548,12790.97};
+			position[]={12786.385,149.73109,12784.071};
 			name="coord_tr";
 			type="Empty";
 		};
@@ -911,6 +911,36 @@ class Mission
 			text="Vehicle Repair";
 			type="c_car";
 			colorName="ColorBlue";
+		};
+		class Item14
+		{
+			position[]={5029.2803,193.05461,5449.7949};
+			name="enemyspawn_ei_6";
+			type="Empty";
+		};
+		class Item15
+		{
+			position[]={5401.0913,268.7359,5475.5537};
+			name="enemyspawn_ei_7";
+			type="Empty";
+		};
+		class Item16
+		{
+			position[]={4789.3677,251.04106,6707.1128};
+			name="enemyspawn_ei_8";
+			type="Empty";
+		};
+		class Item17
+		{
+			position[]={5878.7134,134.29033,6613.2129};
+			name="enemyspawn_ei_9";
+			type="Empty";
+		};
+		class Item18
+		{
+			position[]={5066.8726,300.64981,6846.5005};
+			name="enemyspawn_vic_3";
+			type="Empty";
 		};
 	};
 };
