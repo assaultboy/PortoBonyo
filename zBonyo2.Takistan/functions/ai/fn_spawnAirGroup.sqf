@@ -21,7 +21,6 @@ if (!isServer) then {
 	["This function must be executed on the server"] call BIS_fnc_error;
 };
 
-private ["_rifleman","_mg","_marksman","_teamLeader","_squadLeader","_officer","_riflemanAT","_medic","_sniper","_spotter","_engineer","_exSpecialist","_grenadier","_crewman","_pilot","_aircrew"];
 private ["_groupProto","_grp","_spawnPoint","_air"];
 
 _groupProto = [];
@@ -29,35 +28,7 @@ _spawnPoint = _this;
 _grp = createGroup EAST;
 
 //Choose a random faction to load
-switch ([1,2,3,4,5,6,7] call BIS_fnc_selectRandom) do {
-	case 1: {
-		#include "infantry\factions\csat.sqf"
-	};
-	
-	case 2: {
-		#include "infantry\factions\nato.sqf"
-	};
-	
-	case 3: {
-		#include "infantry\factions\guerilla.sqf"
-	};
-	
-	case 4: {
-		#include "infantry\factions\indArmy.sqf"
-	};
-	
-	case 5: {
-		#include "infantry\factions\usArmyOCP.sqf"
-	};
-	
-	case 6: {
-		#include "infantry\factions\USMCMarpat.sqf"
-	};
-	
-	case 7: {
-		#include "infantry\factions\russianMSV.sqf"
-	};
-};
+#include "infantry\loadFaction.sqf"
 
 //Choose a random vehicle and create it
 #include "vehicle\aircraft.sqf"
