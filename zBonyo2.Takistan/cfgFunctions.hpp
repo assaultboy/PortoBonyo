@@ -38,6 +38,8 @@ class CfgFunctions
 			class setupSellArea {};
 			class setupStarter {};
 			class setupBuy {};
+			class setupBuy2 {};
+			class setupBuy3 {};
 			class setupVehicleStation {};
 			class setupItemShop {};
 		};
@@ -58,6 +60,7 @@ class CfgFunctions
 		class objects
 		{
 			class buyVehicle {};
+			class buyUAV {};
 			class buyFort {};
 			class makeMoveable {};
 		};

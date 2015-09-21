@@ -744,7 +744,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=7;
+		items=10;
 		class Item0
 		{
 			position[]={5209.0049,145.39891,6061.8257};
@@ -790,13 +790,14 @@ class Mission
 		class Item4
 		{
 			position[]={5187.582,145.39999,6057.3481};
-			azimut=165.94452;
+			azimut=165.94501;
 			offsetY=-8.0108599e-005;
 			id=35;
 			side="EMPTY";
 			vehicle="Land_Noticeboard_F";
 			skill=0.60000002;
 			text="BONYO_obj_buy";
+			init="this setObjectTexture [0, ""Images\fort.jpg""]";
 		};
 		class Item5
 		{
@@ -819,10 +820,45 @@ class Mission
 			skill=0.60000002;
 			text="BONYO_obj_itemShop";
 		};
+		class Item7
+		{
+			position[]={5189.4907,145.39999,6057.7979};
+			azimut=165.94501;
+			offsetY=-8.0108599e-005;
+			id=38;
+			side="EMPTY";
+			vehicle="Land_Noticeboard_F";
+			skill=0.60000002;
+			text="BONYO_veh_buy";
+			init="this setObjectTexture [0, ""Images\jakal.jpg""]";
+		};
+		class Item8
+		{
+			position[]={5185.7412,145.39999,6056.8784};
+			azimut=165.94501;
+			offsetY=-8.0108599e-005;
+			id=39;
+			side="EMPTY";
+			vehicle="Land_Noticeboard_F";
+			skill=0.60000002;
+			text="BONYO_sup_buy";
+			init="this setObjectTexture [0, ""Images\supp.jpg""]";
+		};
+		class Item9
+		{
+			position[]={5196.2368,145.39999,6054.978};
+			azimut=189.91701;
+			offsetY=-9.0108602e-005;
+			id=40;
+			side="EMPTY";
+			vehicle="Land_Billboard_F";
+			skill=0.60000002;
+			init="this setObjectTexture [0, ""Images\usec.jpg""]; this addAction [""<t color='#C00000'>Don't do it!!!</t>"",{          _soundPath = [(str missionConfigFile), 0, -15] call BIS_fnc_trimString;      _soundToPlay = _soundPath + ""Sounds\nope.ogg"";     playSound3D [_soundToPlay,_this select 1];  },[],1,false];";
+		};
 	};
 	class Markers
 	{
-		items=19;
+		items=20;
 		class Item0
 		{
 			position[]={5172.0566,145.35646,6072.0151};
@@ -940,6 +976,12 @@ class Mission
 		{
 			position[]={5066.8726,300.64981,6846.5005};
 			name="enemyspawn_vic_3";
+			type="Empty";
+		};
+		class Item19
+		{
+			position[]={5655.207,83.048332,11210.559};
+			name="uavDeliveryArea";
 			type="Empty";
 		};
 	};

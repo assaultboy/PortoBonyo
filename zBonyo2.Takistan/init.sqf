@@ -6,7 +6,7 @@ BONYO_var_enemySpawn_vic = ["enemyspawn_vic_1","enemyspawn_vic_2","enemyspawn_vi
 BONYO_var_enemySpawn_air = ["enemyspawn_air_1","enemyspawn_air_2"];
 BONYO_info_saveVar = "bonyo_save_taki";
 
-//Setting TFAR Radios to Custom Frequency (Includes 
+//Setting TFAR Radios to Custom Frequency
 tf_same_frequencies_for_side = true;
 
 //These are only so the variables are defined
