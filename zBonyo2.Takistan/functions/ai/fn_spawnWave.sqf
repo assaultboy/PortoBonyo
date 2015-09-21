@@ -126,6 +126,7 @@ if (random _wave >= 1) then {
 	
 	//When all enemies are dead, pop a notification on everyone's screen
 	[-1, {
-		["WaveComplete",[_this]] call BIS_fnc_showNotification;
+		[["WaveComplete1","WaveComplete2","WaveComplete3"] call BIS_fnc_selectRandom,[_this]] call BIS_fnc_showNotification;
+		[player, 100, true] call BONYO_fnc_giveMoney;
 	},BONYO_var_wave] call CBA_fnc_globalExecute;
 };

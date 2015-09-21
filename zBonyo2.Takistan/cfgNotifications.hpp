@@ -18,7 +18,7 @@ class CfgNotifications
 		priority = 10;
 	};
 	
-	class WaveComplete
+	class WaveComplete1
 	{
 		title = "WAVE COMPLETED";
 		iconText = "%1";
@@ -26,4 +26,21 @@ class CfgNotifications
 		color[] = {1,1,1,1};
 		priority = 10;
 	};
+	class WaveComplete2
+	{
+		title = "WAVE COMPLETED";
+		iconText = "%1";
+		description = "<t size='0.75'>WAVE COMPLETE <br />Go loot like it's a riot</t>";
+		color[] = {1,1,1,1};
+		priority = 10;
+	};
+	class WaveComplete3
+	{
+		title = "WAVE COMPLETED";
+		iconText = "%1";
+		description = "<t size='0.75'>WAVE COMPLETE <br />Go get yer plunders</t>";
+		color[] = {1,1,1,1};
+		priority = 10;
+	};
+	
 };
