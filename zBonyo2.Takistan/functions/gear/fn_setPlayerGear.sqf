@@ -33,7 +33,6 @@ if (!local _unit) then {
 
 //Take all the unit's gear that they respawn with	
 removeHeadgear _unit:
-removeGoggles _unit;
 removeVest _unit;
 removeBackpack _unit;
 removeUniform _unit;
@@ -68,6 +67,5 @@ _unit addWeapon "SMG_02_F";
 } forEach [1,2,3,4,5];
 
 _unit addItem "ACE_morphine";
-_unit addItem "ACE_EarPlugs";
 
 _unit switchMove "";
