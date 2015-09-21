@@ -33,7 +33,7 @@ _box addEventHandler ["ContainerOpened", {
 	_box = (_this select 0);
 	_player = (_this select 1);
 	
-	_personalBox = "Box_NATO_Wps_F" createVehicleLocal [0,0,5000];
+	_personalBox = "B_Truck_01_box_F" createVehicleLocal [0,0,5000];
 	_personalBox allowDamage false;
 	_personalBox hideObject true;
 	
