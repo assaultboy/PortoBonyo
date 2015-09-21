@@ -35,16 +35,10 @@ _object addAction ["Buy JAKAL GMG $6,000", {["UK3CB_BAF_Jackal2_GMG_D",6000] cal
 _object addAction ["Buy HMMWV TOW $7,000", {["DAR_M1167",7000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
 _object addAction ["Buy COYOTE HMG $8,000", {["UK3CB_BAF_Coyote_passenger_L111A1_D",8000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
 _object addAction ["Buy COYOTE GMG $10,000", {["UK3CB_BAF_Coyote_passenger_L134A1_D",10000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
-_object addAction ["Buy Static HMG $500", {["B_HMG_01_high_F", 500] call BONYO_fnc_buyFort}, nil, 6, false, true];
-_object addAction ["Buy Static GMG $1000", {["B_GMG_01_high_F", 1000] call BONYO_fnc_buyFort}, nil, 6, false, true];
-_object addAction ["Buy HMG Autonomous Bag $4000", {["B_HMG_01_A_weapon_F", 4000] call BONYO_fnc_buyFort}, nil, 6, false, true];
-_object addAction ["Buy GMG Autonomous Bag $4000", {["B_GMG_01_A_weapon_F", 4000] call BONYO_fnc_buyFort}, nil, 6, false, true];
-_object addAction ["Buy Folded Tripod Bag $1000", {["B_HMG_01_support_F", 1000] call BONYO_fnc_buyFort}, nil, 6, false, true];
 _object addAction ["Buy Static MK6 Mortar $2000", {["B_Mortar_01_F", 2000] call BONYO_fnc_buyFort}, nil, 6, false, true];
 
 _object addAction ["<t color='#FF0000'>--Aircraft---------------------------</t>", "", nil, 6, false, true];
 
-_object addAction ["Buy UAV Darter Pack $1000", {["B_UAV_01_backpack_F", 1000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
 _object addAction ["Buy Civilian Helo $25,000", {["C_Heli_Light_01_civil_F",25000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
 _object addAction ["Buy Humming Bird $50,000", {["B_Heli_Light_01_F",50000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
 _object addAction ["Buy Ghost Hawk $75,000", {["B_Heli_Transport_01_camo_F",75000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
