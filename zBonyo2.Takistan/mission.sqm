@@ -853,7 +853,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this setObjectTexture [0, ""Images\usec.jpg""]; this addAction [""<t color='#C00000'>Don't do it!!!</t>"",{          _soundPath = [(str missionConfigFile), 0, -15] call BIS_fnc_trimString;      _soundToPlay = _soundPath + ""Sounds\nope.ogg"";     playSound3D [_soundToPlay,_this select 1];  },[],1,false];";
+			init="this setObjectTexture [0, ""Images\usec.jpg""];";
 		};
 	};
 	class Markers
