@@ -11,7 +11,7 @@ BONYO_var_enemyList = [];
 	[_this select 0, _name] call BONYO_fnc_createCustomAwayMission;
 }] call Ares_fnc_RegisterCustomModule;
 
-[, -1{
+[-1, {
 	{
 		_x addCuratorEditableObjects [[_this], true];
 	} forEach allCurators;
