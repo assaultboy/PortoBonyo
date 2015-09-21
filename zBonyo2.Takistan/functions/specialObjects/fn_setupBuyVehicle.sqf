@@ -51,6 +51,8 @@ _object addAction ["Buy Ghost Hawk $75,000", {["B_Heli_Transport_01_camo_F",7500
 _object addAction ["Buy Pawnee $100,000", {["B_Heli_Light_01_armed_F",100000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
 _object addAction ["Buy A Fucking Commanche $500,000", {["B_Heli_Attack_01_F",500000] call BONYO_fnc_buyVehicle}, nil, 6, false, true];
 
-_object addAction ["<t color='#FF0000'>--UAV Drone-EXPERIMENTAL--------------------------</t>", "", nil, 6, false, true];
 
-_object addAction ["Buy UAV MQ-10 Reaper $10000", {["B_UAV_02_F", 10000] call BONYO_fnc_buyUav}, nil, 6, false, true];
+//Disabled for now
+//_object addAction ["<t color='#FF0000'>--UAV Drone-EXPERIMENTAL--------------------------</t>", "", nil, 6, false, true];
+
+//_object addAction ["Buy UAV MQ-10 Reaper $10000", {["B_UAV_02_F", 10000] call BONYO_fnc_buyUav}, nil, 6, false, true];
