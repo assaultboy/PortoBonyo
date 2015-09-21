@@ -796,7 +796,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Noticeboard_F";
 			skill=0.60000002;
-			text="BONYO_obj_buy";
+			text="BONYO_obj_buyFort";
 			init="this setObjectTexture [0, ""Images\fort.jpg""]";
 		};
 		class Item5
@@ -829,7 +829,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Noticeboard_F";
 			skill=0.60000002;
-			text="BONYO_veh_buy";
+			text="BONYO_obj_buyVehicle";
 			init="this setObjectTexture [0, ""Images\jakal.jpg""]";
 		};
 		class Item8
@@ -841,7 +841,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Noticeboard_F";
 			skill=0.60000002;
-			text="BONYO_sup_buy";
+			text="BONYO_obj_buySupply";
 			init="this setObjectTexture [0, ""Images\supp.jpg""]";
 		};
 		class Item9

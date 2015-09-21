@@ -23,11 +23,11 @@ BONYO_obj_sellArea call BONYO_fnc_setupSellArea;
 
 BONYO_obj_starter call BONYO_fnc_setupStarter;
 
-BONYO_veh_buy call BONYO_fnc_setupBuy;
+BONYO_obj_buyVehicle call BONYO_fnc_setupBuyVehicle;
 
-BONYO_obj_buy call BONYO_fnc_setupBuy2;
+BONYO_obj_buyFort call BONYO_fnc_setupBuyFort;
 
-BONYO_sup_buy call BONYO_fnc_setupBuy3;
+BONYO_obj_buySupply call BONYO_fnc_setupBuySupply;
 
 BONYO_obj_vehicleStation call BONYO_fnc_setupVehicleStation;
 

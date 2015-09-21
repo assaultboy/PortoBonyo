@@ -37,9 +37,9 @@ class CfgFunctions
 			class setupLocker {};
 			class setupSellArea {};
 			class setupStarter {};
-			class setupBuy {};
-			class setupBuy2 {};
-			class setupBuy3 {};
+			class setupBuyVehicle {};
+			class setupBuyFort {};
+			class setupBuySupply {};
 			class setupVehicleStation {};
 			class setupItemShop {};
 		};
