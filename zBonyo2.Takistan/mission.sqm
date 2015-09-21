@@ -477,13 +477,13 @@ class Mission
 						};
 						class Item6
 						{
-							value="0.8";
+							value="0.5";
 							parentCls="ACE_moduleMedicalSettings";
 							typeName="AIDamageThreshold";
 						};
 						class Item7
 						{
-							value="1";
+							value="0";
 							parentCls="ACE_moduleMedicalSettings";
 							typeName="enableUnconsciousnessAI";
 						};
