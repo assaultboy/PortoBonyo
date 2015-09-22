@@ -59,21 +59,17 @@ for [{_i=1}, {_i<=_groupCount}, {_i=_i+1}] do {
 	private ["_grp"];
 	_grp = (getMarkerPos (BONYO_var_enemySpawn_inf call BIS_fnc_selectRandom)) call BONYO_fnc_spawnInfGroup;
 	_grp addWaypoint [getMarkerPos "respawn_west", 50];
-	
-	[-2, {
-		{
-			BONYO_var_enemyList pushBack _x;
-		} forEach units _this;
-	}, _grp] call CBA_fnc_globalExecute;
 };
 
 //Spawn a vehicle maybe
 if (random _wave >= 1) then {
 	private ["_div"];
 	
-	_div = ((_wave - (_wave mod 5)) / 5);
+	//First number is number of rounds between vehicle spawn
+	//Second number is the coefficient, lower means more vehicles
+	_div = ((_wave - (_wave mod 3)) / 2);
 	
-	if (_div > count (call CBA_fnc_players)) then {
+	if (_div > 5 + count (call CBA_fnc_players)) then { //Vehicle count must be less than the number of players + 5
 		_div = count (call CBA_fnc_players);
 	};
 	
@@ -90,9 +86,11 @@ if (random _wave >= 1) then {
 if (random _wave >= 1) then {
 	private ["_div"];
 	
+	//First number is number of rounds between vehicle spawn
+	//Second number is the coefficient, lower means more vehicles
 	_div = ((_wave - (_wave mod 5)) / 5);
 	
-	if (_div > count (call CBA_fnc_players)) then {
+	if (_div > 3 + count (call CBA_fnc_players)) then { //Vehicle count must be less than the number of players + 3
 		_div = count (call CBA_fnc_players);
 	};
 	
