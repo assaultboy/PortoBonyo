@@ -45,7 +45,7 @@ if (isNil "_wave") then {
 
 _playerCount = count (call CBA_fnc_players);
 
-_maxGroups = 3 + (_playerCount * 0.75);
+_maxGroups = 3 + (_playerCount * 2);
 
 _maxGroups = round _maxGroups;
 
