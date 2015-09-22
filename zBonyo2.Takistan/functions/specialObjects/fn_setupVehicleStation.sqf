@@ -146,6 +146,10 @@ _object addAction ["Sell Vehicle", {
 		
 		deleteVehicle _vic;
 		
+		if(typeOf _vic == "B_Quadbike_01_F") then {
+			_cost = 500;
+		}
+		
 		[player, _cost, false] call BONYO_fnc_giveMoney;
 		
 		hint ((_vic call BONYO_fnc_getVehicleDisplayName) + " has been sold for $" + str _cost);
