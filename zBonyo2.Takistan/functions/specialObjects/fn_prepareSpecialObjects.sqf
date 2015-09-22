@@ -32,3 +32,13 @@ BONYO_obj_buySupply call BONYO_fnc_setupBuySupply;
 BONYO_obj_vehicleStation call BONYO_fnc_setupVehicleStation;
 
 BONYO_obj_itemShop call BONYO_fnc_setupItemShop;
+
+BONYO_obj_ArifleShop call BONYO_fnc_setupArifleShop;
+
+BONYO_obj_LauncherShop call BONYO_fnc_setupLauncherShop;
+
+BONYO_obj_MGShop call BONYO_fnc_setupMGShop;
+
+BONYO_obj_SgunShop call BONYO_fnc_setupSgunShop;
+
+BONYO_obj_SrifleShop call BONYO_fnc_setupSrifleShop;

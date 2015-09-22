@@ -42,6 +42,11 @@ class CfgFunctions
 			class setupBuySupply {};
 			class setupVehicleStation {};
 			class setupItemShop {};
+			class setupArifleShop {};
+			class setupLauncherShop {};
+			class setupMGShop {};
+			class setupSgunShop {};
+			class setupSrifleShop {};			
 		};
 		
 		class ai
