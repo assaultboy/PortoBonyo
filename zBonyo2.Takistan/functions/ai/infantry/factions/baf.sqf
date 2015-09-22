@@ -1,0 +1,16 @@
+_rifleman = "CUP_B_BAF_Soldier_MTP";
+_mg = "CUP_B_BAF_Soldier_AR_MTP";
+_marksman = ["CUP_B_BAF_Soldier_scout_MTP","CUP_B_BAF_Soldier_Marksman_MTP"] call BIS_fnc_selectRandom;
+_teamLeader = "CUP_B_BAF_Soldier_TL_MTP";
+_squadLeader = "CUP_B_BAF_Soldier_SL_MTP";
+_officer = "CUP_B_BAF_Officer_MTP";
+_riflemanAT = "CUP_B_BAF_Soldier_AT_MTP";
+_medic = "CUP_B_BAF_Medic_MTP";
+_sniper = "CUP_B_BAF_Sniper_MTP";
+_spotter = "CUP_B_BAF_Spotter_MTP";
+_engineer = "CUP_B_BAF_Engineer_MTP";
+_exSpecialist = "CUP_B_BAF_Soldier_AAT_MTP";
+_grenadier = "CUP_B_BAF_Soldier_GL_MTP";
+_crewman = "CUP_B_BAF_Crew_MTP";
+_pilot = "CUP_B_BAF_Pilot_MTP";
+_aircrew = "CUP_B_BAF_Pilot_MTP";
