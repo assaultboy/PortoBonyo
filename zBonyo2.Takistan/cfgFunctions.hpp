@@ -50,6 +50,7 @@ class CfgFunctions
 			class spawnVicGroup {};
 			class spawnAirGroup {};
 			class spawnWave {};
+			class spawnUnit {};
 			class setWave {};
 			
 			//Away missions Stuff

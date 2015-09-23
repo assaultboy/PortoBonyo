@@ -35,38 +35,7 @@ _grp = createGroup EAST;
 
 //Spawn each member of the group and set them up for bonyo
 {
-	private ["_unit"];
-	
-	_unit = (_grp createUnit [_x select 0, _spawnPoint, [], 0, "NONE"]);
-	[_unit] join _grp;
-	
-	_unit setRank (_x select 1);
-	
-	//Give the unit's killer money
-	_unit addEventHandler ["killed", {
-		private ["_unit","_killer","_reward"];
-		
-		_unit = (_this select 0);
-		_killer = (_this select 1);
-		
-		_reward = 1;
-		
-		switch (rank _unit) do {
-			case "PRIVATE": {_reward = 10};
-			case "CORPORAL": {_reward = 15};
-			case "SERGEANT": {_reward = 20};
-			case "LIEUTENANT": {_reward = 25};
-			case "CAPTAIN": {_reward = 30};
-			case "MAJOR": {_reward = 35};
-			case "COLONEL": {_reward = 40};
-		};
-		
-		[-2, {
-			if (local (_this select 0)) then {
-				[player,_this select 1,true] call BONYO_fnc_giveMoney;
-			};
-		}, [_killer,_reward]] call CBA_fnc_globalExecute;
-	}];
+	[_x select 0, _x select 1 ,_spawnPoint, _grp] call BONYO_fnc_spawnUnit;
 } forEach _groupProto;
 
 
