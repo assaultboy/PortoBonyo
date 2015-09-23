@@ -97,7 +97,21 @@ _object addAction ["Purchase HuntIR Round: $200",{
 	if([player, 200] call BONYO_fnc_purchase) then {
 		_box addItemCargoGlobal ["ACE_HuntIR_M203",4];
 		
-		hint "HMG (Raised) purchased";
+		hint "HuntIR Round purchased";
+	} else {
+		hint "You do not have enough for that";
+	};
+}];
+
+_object addAction ["Purchase Kestrel 4500NV: $200",{
+	private ["_box"];
+	
+	_box = (_this select 0);
+	
+	if([player, 200] call BONYO_fnc_purchase) then {
+		_box addItemCargoGlobal ["ACE_Kestrel4500",4];
+		
+		hint "Kestrel 4500NV purchased";
 	} else {
 		hint "You do not have enough for that";
 	};
