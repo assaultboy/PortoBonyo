@@ -88,3 +88,17 @@ _object addAction ["Purchase HMG (Raised): $15000",{
 		hint "You do not have enough for that";
 	};
 }];
+
+_object addAction ["Purchase HuntIR Round: $200",{
+	private ["_box"];
+	
+	_box = (_this select 0);
+	
+	if([player, 200] call BONYO_fnc_purchase) then {
+		_box addItemCargoGlobal ["ACE_HuntIR_M203",4];
+		
+		hint "HMG (Raised) purchased";
+	} else {
+		hint "You do not have enough for that";
+	};
+}];
