@@ -1,4 +1,4 @@
-private ["_pos","_i","_box"];
+private ["_pos","_i","_box","_vicList"];
 
 
 "awayMission" setMarkerText "Logistics Cache";
@@ -25,6 +25,7 @@ for [{_i=0}, {_i<count (call CBA_fnc_players)}, {_i=_i+1}] do {
 };
 
 _box = ("B_Slingload_01_Cargo_F" createVehicle _pos);
+_vicList pushback "B_G_Offroad_01_armed_F"; //Please work ("")(-.-)("")
 
 BONYO_var_awayList pushBack _box;
 
