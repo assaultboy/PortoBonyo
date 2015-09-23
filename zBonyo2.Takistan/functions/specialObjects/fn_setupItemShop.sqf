@@ -116,3 +116,45 @@ _object addAction ["Purchase Kestrel 4500NV: $200",{
 		hint "You do not have enough for that";
 	};
 }];
+
+_object addAction ["Purchase Spotting Scope: $300",{
+	private ["_box"];
+	
+	_box = (_this select 0);
+	
+	if([player, 300] call BONYO_fnc_purchase) then {
+		_box addItemCargoGlobal ["ACE_SpottingScope",1];
+		
+		hint "Spotting Scope purchased";
+	} else {
+		hint "You do not have enough for that";
+	};
+}];
+
+_object addAction ["Purchase Telescopic Ladder: $100",{
+	private ["_box"];
+	
+	_box = (_this select 0);
+	
+	if([player, 300] call BONYO_fnc_purchase) then {
+		_box addItemCargoGlobal ["ACE_TacticalLadder_Pack",1];
+		
+		hint "Telescopic Ladder purchased";
+	} else {
+		hint "You do not have enough for that";
+	};
+}];
+
+_object addAction ["Purchase SSWT Kit (Tripod): $500",{
+	private ["_box"];
+	
+	_box = (_this select 0);
+	
+	if([player, 300] call BONYO_fnc_purchase) then {
+		_box addItemCargoGlobal ["ACE_Tripod",1];
+		
+		hint "SSWT Kit (Tripod) purchased";
+	} else {
+		hint "You do not have enough for that";
+	};
+}];
