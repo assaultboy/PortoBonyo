@@ -136,7 +136,7 @@ _object addAction ["Purchase Telescopic Ladder: $100",{
 	
 	_box = (_this select 0);
 	
-	if([player, 300] call BONYO_fnc_purchase) then {
+	if([player, 100] call BONYO_fnc_purchase) then {
 		_box addItemCargoGlobal ["ACE_TacticalLadder_Pack",1];
 		
 		hint "Telescopic Ladder purchased";
