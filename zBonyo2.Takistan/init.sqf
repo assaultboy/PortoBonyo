@@ -1,3 +1,7 @@
+//Load Scripts we "Acquired"
+
+	[] execVM "stolen\icons.sqf";  
+
 //Setup all out static variables
 
 //These need to be modified for each different map
