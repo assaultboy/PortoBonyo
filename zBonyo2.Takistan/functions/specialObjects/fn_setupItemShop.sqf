@@ -158,3 +158,18 @@ _object addAction ["Purchase SSWT Kit (Tripod): $500",{
 		hint "You do not have enough for that";
 	};
 }];
+
+_object addAction ["Purchase AA Kit: $2000",{
+	private ["_box"];
+	
+	_box = (_this select 0);
+	
+	if([player, 2000] call BONYO_fnc_purchase) then {
+		_box addItemCargoGlobal ["CUP_launch_FIM92Stinger",1];
+		_box addItemCargoGlobal ["CUP_Stinger_M",1];
+		
+		hint "AA Kit purchased";
+	} else {
+		hint "You do not have enough for that";
+	};
+}];

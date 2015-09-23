@@ -744,7 +744,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=20;
+		items=10;
 		class Item0
 		{
 			position[]={5209.0049,145.39891,6061.8257};
@@ -854,111 +854,6 @@ class Mission
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
 			init="this setObjectTexture [0, ""Images\usec.jpg""];";
-		};
-		class Item10
-		{
-			position[]={5207.4365,145.40433,6096.457};
-			azimut=-106.205;
-			id=41;
-			side="EMPTY";
-			vehicle="B_CargoNet_01_ammo_F";
-			skill=0.60000002;
-			text="BONYO_obj_SrifleShop";
-		};
-		class Item11
-		{
-			position[]={5204.9819,145.40927,6095.7368};
-			azimut=-106.205;
-			id=42;
-			side="EMPTY";
-			vehicle="B_CargoNet_01_ammo_F";
-			skill=0.60000002;
-			text="BONYO_obj_SgunShop";
-		};
-		class Item12
-		{
-			position[]={5202.4927,145.41603,6095.0029};
-			azimut=-106.205;
-			id=43;
-			side="EMPTY";
-			vehicle="B_CargoNet_01_ammo_F";
-			skill=0.60000002;
-			text="BONYO_obj_MGShop";
-		};
-		class Item13
-		{
-			position[]={5200.0444,145.42152,6094.2715};
-			azimut=-106.205;
-			id=44;
-			side="EMPTY";
-			vehicle="B_CargoNet_01_ammo_F";
-			skill=0.60000002;
-			text="BONYO_obj_LauncherShop";
-		};
-		class Item14
-		{
-			position[]={5197.5537,145.43114,6093.5591};
-			azimut=-106.205;
-			id=45;
-			side="EMPTY";
-			vehicle="B_CargoNet_01_ammo_F";
-			skill=0.60000002;
-			text="BONYO_obj_ArifleShop";
-		};
-		class Item15
-		{
-			position[]={5205.3833,145.40503,6094.4556};
-			azimut=342.798;
-			offsetY=-8.0108599e-005;
-			id=46;
-			side="EMPTY";
-			vehicle="Land_Noticeboard_F";
-			skill=0.60000002;
-			init="this setObjectTexture [0, ""Images\sgun.jpg""]";
-		};
-		class Item16
-		{
-			position[]={5207.8564,145.40221,6095.1343};
-			azimut=342.798;
-			offsetY=-8.0108599e-005;
-			id=47;
-			side="EMPTY";
-			vehicle="Land_Noticeboard_F";
-			skill=0.60000002;
-			init="this setObjectTexture [0, ""Images\srifle.jpg""]";
-		};
-		class Item17
-		{
-			position[]={5202.9106,145.41086,6093.8096};
-			azimut=342.798;
-			offsetY=-8.0108599e-005;
-			id=48;
-			side="EMPTY";
-			vehicle="Land_Noticeboard_F";
-			skill=0.60000002;
-			init="this setObjectTexture [0, ""Images\mg.jpg""]";
-		};
-		class Item18
-		{
-			position[]={5200.4702,145.41791,6093.0986};
-			azimut=342.798;
-			offsetY=-8.0108599e-005;
-			id=49;
-			side="EMPTY";
-			vehicle="Land_Noticeboard_F";
-			skill=0.60000002;
-			init="this setObjectTexture [0, ""Images\launch.jpg""]";
-		};
-		class Item19
-		{
-			position[]={5197.9976,145.42514,6092.355};
-			azimut=342.798;
-			offsetY=-8.0108599e-005;
-			id=50;
-			side="EMPTY";
-			vehicle="Land_Noticeboard_F";
-			skill=0.60000002;
-			init="this setObjectTexture [0, ""Images\arifle.jpg""]";
 		};
 	};
 	class Markers
