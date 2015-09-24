@@ -131,20 +131,6 @@ _object addAction ["Purchase Spotting Scope: $300",{
 	};
 }];
 
-_object addAction ["Purchase Telescopic Ladder: $100",{
-	private ["_box"];
-	
-	_box = (_this select 0);
-	
-	if([player, 100] call BONYO_fnc_purchase) then {
-		_box addItemCargoGlobal ["ACE_TacticalLadder_Pack",1];
-		
-		hint "Telescopic Ladder purchased";
-	} else {
-		hint "You do not have enough for that";
-	};
-}];
-
 _object addAction ["Purchase SSWT Kit (Tripod): $500",{
 	private ["_box"];
 	
