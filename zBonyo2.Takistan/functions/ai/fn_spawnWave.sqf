@@ -59,6 +59,13 @@ for [{_i=1}, {_i<=_groupCount}, {_i=_i+1}] do {
 	private ["_grp"];
 	_grp = (getMarkerPos (BONYO_var_enemySpawn_inf call BIS_fnc_selectRandom)) call BONYO_fnc_spawnInfGroup;
 	_grp addWaypoint [getMarkerPos "respawn_west", 50];
+	
+	//Add units to the enemy list so we can check if they're all dead
+	[-2, {
+		{
+			BONYO_var_enemyList pushBack _x;
+		} forEach units _this;
+	}, _grp] call CBA_fnc_globalExecute;
 };
 
 //Spawn a vehicle maybe
@@ -79,6 +86,13 @@ if (random _wave >= 1) then {
 		_vGrp = ((getMarkerPos (BONYO_var_enemySpawn_vic call BIS_fnc_selectRandom)) call BONYO_fnc_spawnVicGroup);
 		
 		_vGrp addWaypoint [getMarkerPos "respawn_west", 50];
+		
+		//Add units to the enemy list so we can check if they're all dead
+		[-2, {
+			{
+				BONYO_var_enemyList pushBack _x;
+			} forEach units _this;
+		}, _grp] call CBA_fnc_globalExecute;
 	};
 };
 
@@ -100,6 +114,13 @@ if (random _wave >= 1) then {
 		_aGrp = ((getMarkerPos (BONYO_var_enemySpawn_air call BIS_fnc_selectRandom)) call BONYO_fnc_spawnAirGroup);
 		
 		_aGrp addWaypoint [getMarkerPos "respawn_west", 50];
+		
+		//Add units to the enemy list so we can check if they're all dead
+		[-2, {
+			{
+				BONYO_var_enemyList pushBack _x;
+			} forEach units _this;
+		}, _grp] call CBA_fnc_globalExecute;
 	};
 };
 
