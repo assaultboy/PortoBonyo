@@ -35,6 +35,7 @@ _object addAction ["Buy Sandbag Wall (Tiny) $10", {["Land_BagFence_End_F", 10] c
 _object addAction ["Buy H-Barrier $50", {["Land_HBarrier_3_F", 50] call BONYO_fnc_buyFort}, nil, 6, false, true];
 _object addAction ["Buy H-Barrier (Single) $20", {["Land_HBarrier_1_F", 20] call BONYO_fnc_buyFort}, nil, 6, false, true];
 _object addAction ["Buy Ramp $5", {["Land_Obstacle_Ramp_F", 5] call BONYO_fnc_buyFort}, nil, 6, false, true];
+_object addAction ["Buy Ladder $20", {["Land_ladder_half", 20] call BONYO_fnc_buyFort}, nil, 6, false, true];
 
 _object addAction ["<t color='#FF0000'>--Lights------------------------------</t>", "", nil, 6, false, true];
 

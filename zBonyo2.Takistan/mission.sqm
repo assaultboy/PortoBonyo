@@ -744,7 +744,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=10;
+		items=9;
 		class Item0
 		{
 			position[]={5209.0049,145.39891,6061.8257};
@@ -834,22 +834,10 @@ class Mission
 		};
 		class Item8
 		{
-			position[]={5185.7412,145.39999,6056.8784};
-			azimut=165.94501;
-			offsetY=-8.0108599e-005;
-			id=39;
-			side="EMPTY";
-			vehicle="Land_Noticeboard_F";
-			skill=0.60000002;
-			text="BONYO_obj_buySupply";
-			init="this setObjectTexture [0, ""Images\supp.jpg""]";
-		};
-		class Item9
-		{
 			position[]={5196.2368,145.39999,6054.978};
 			azimut=189.91701;
 			offsetY=-9.0108602e-005;
-			id=40;
+			id=39;
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
