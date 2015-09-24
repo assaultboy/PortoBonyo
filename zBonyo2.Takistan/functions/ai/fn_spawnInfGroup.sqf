@@ -44,4 +44,11 @@ _grp = createGroup EAST;
 	_x addCuratorEditableObjects [units _grp, true];
 } forEach allCurators;
 
+//Add units to the enemy list so we can check if they're all dead
+[-2, {
+	{
+		BONYO_var_enemyList pushBack _x;
+	} forEach units _this;
+}, _grp] call CBA_fnc_globalExecute;
+
 _grp;
