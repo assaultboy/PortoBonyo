@@ -42,7 +42,7 @@ createMarker ["awayMission",_pos];
 _oList = [
 	"ammo_cache",
 	"medical_cache",
-	"logistics_cache"
+	"enemy_hq"
 ];
 
 if (isOnRoad _pos) then {
