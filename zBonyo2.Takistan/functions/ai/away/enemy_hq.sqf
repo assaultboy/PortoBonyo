@@ -18,16 +18,15 @@ for [{_i=0}, {_i<count (call CBA_fnc_players)}, {_i=_i+1}] do {
 	_grp = _newPos call BONYO_fnc_spawnInfGroup;
 	_grp = _newPos call BONYO_fnc_spawnInfGroup;
 	_grp = _newPos call BONYO_fnc_spawnVicGroup;
-	_grp = _newPos call BONYO_fnc_spawnVicGroup;
-			
+					
 	[_grp, _pos, (random 240) + 10] call BIS_fnc_taskPatrol;
-	
+	_box = ("Land_i_Barracks_V2_F" createVehicle _newPos);
 	{
 		BONYO_var_awayList pushBack _x;
 	} forEach units _grp;
 };
 
-//Spawn a more groups Muhahaha
+//Spawn a MORE groups Muhahaha
 for [{_i=0}, {_i<count (call CBA_fnc_players)}, {_i=_i+1}] do {
 	private ["_grp","_newPos"];
 	
@@ -35,9 +34,7 @@ for [{_i=0}, {_i<count (call CBA_fnc_players)}, {_i=_i+1}] do {
 	
 	_grp = _newPos call BONYO_fnc_spawnInfGroup;
 	_grp = _newPos call BONYO_fnc_spawnInfGroup;
-	_grp = _newPos call BONYO_fnc_spawnVicGroup;
-	_grp = _newPos call BONYO_fnc_spawnVicGroup;
-			
+				
 	[_grp, _pos, (random 240) + 10] call BIS_fnc_taskPatrol;
 	
 	{

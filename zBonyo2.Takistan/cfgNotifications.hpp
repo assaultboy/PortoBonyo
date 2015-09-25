@@ -98,5 +98,13 @@ class CfgNotifications
 		color[] = {1,1,1,1};
 		priority = 10;
 	};
+			class HQCleared
+	{
+		title = "HQ Cleared";
+		iconText = "%1";
+		description = "<t size='0.75'>HQ CLEARED <br />Well done, RTB</t>";
+		color[] = {1,1,1,1};
+		priority = 10;
+	};
 	
 };
